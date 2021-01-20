@@ -1,0 +1,8 @@
+.error{
+    display: grid;
+    place-items: center;
+    &-inner{
+        @include maxWidth;
+        text-align: center;
+    }
+}

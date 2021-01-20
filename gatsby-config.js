@@ -3,13 +3,13 @@ module.exports = {
     title: "template",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        accessToken: "1",
-        spaceId: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-contentful",
+    //   options: {
+    //     accessToken: "1",
+    //     spaceId: "",
+    //   },
+    // },
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
@@ -21,6 +21,15 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+            family: "Roboto",
+            variants: ["400", "700"],
+          },
+      }
     },
   ],
 };
