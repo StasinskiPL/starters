@@ -36,13 +36,13 @@
 }
 
 @mixin mediumMq {
-    @media screen and (min-width: $mediumSize) {
+    @media screen and (min-width: $mediumWidth) {
         @content;
     }
 }
 
 @mixin deskopMq {
-    @media screen and (min-width: $deskopSize) {
+    @media screen and (min-width: $deskopWidth) {
         @content;
     }
 }
